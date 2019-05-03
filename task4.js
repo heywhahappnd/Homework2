@@ -3,9 +3,9 @@ function City(name, population, country) {
 	this.population = population;
 	this.country = country;
 
-	this.getPopulation = () => this.population,
-	this.getCityName = () => this.name,
-	this.addCitizen = () => this.population += 1 
+	this.getPopulation = () => this.population;
+	this.getCityName = () => this.name;
+	this.addCitizen = () => this.population += 1; 
 }
 
 const Kyiv = new City("Kyiv", 300000, "Ukraine");

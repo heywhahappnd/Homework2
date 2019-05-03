@@ -9,7 +9,7 @@ const Car = {
   isAccelerated: false,
   accelerationOn: function() {
     
-    if(this.fuel > 0) {
+    if (this.fuel > 0) {
       this.isAccelerated = true;
     } else {
       console.log("Заправьте автомобиль")
@@ -17,7 +17,7 @@ const Car = {
   },
   startMoving: function() {
 
-    if(this.isAccelerated) {
+    if (this.isAccelerated) {
       this.fuel -= 20;
       this.mileage += 5;
       console.log(`Машина ${this.brand} марки ${this.color} цвета поехала!`)
@@ -27,7 +27,7 @@ const Car = {
   },
   stopMoving: function() {
 
-   if(this.isAccelerated) {
+   if (this.isAccelerated) {
      this.isAccelerated = false;
      console.log("Машинка остановилась");
    } else {

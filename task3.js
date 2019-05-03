@@ -1,6 +1,6 @@
 'use strict';
 
-function Car(brand, year, color, mileage, fuel) {
+function Car3(brand, year, color, mileage, fuel) {
 	this.brand = brand;
 	this.year = year;
 	this.color = color;
@@ -9,16 +9,16 @@ function Car(brand, year, color, mileage, fuel) {
   this.isAccelerated = false;
 }
 
-Car.prototype = {
+Car3.prototype = {
   accelerationOn: function() {
-    if(this.fuel > 0) {
+    if (this.fuel > 0) {
       this.isAccelerated = true;
     } else {
       console.log("Заправьте автомобиль")
     }
   },
   startMoving: function() {
-    if(this.isAccelerated) {
+    if (this.isAccelerated) {
       this.fuel -= 20;
       this.mileage += 5;
       console.log(`Машина ${this.brand} марки ${this.color} цвета поехала!`)
@@ -27,7 +27,7 @@ Car.prototype = {
     }
   },
   stopMoving: function() {
-    if(this.isAccelerated) {
+    if (this.isAccelerated) {
      this.isAccelerated = false;
      console.log("Машинка остановилась");
    } else {
@@ -40,17 +40,17 @@ Car.prototype = {
 }
 
 
-console.log(Car.prototype);
+console.log(Car3.prototype);
 
-const Suzuki = new Car("Suzuki", 2017, "Blue", 50, 0);
-console.log(Suzuki);
+const Subaru = new Car3("Subaru", 2017, "Blue", 50, 0);
+console.log(Subaru);
 
-Suzuki.accelerationOn();
-Suzuki.stopMoving();
+Subaru.accelerationOn();
+Subaru.stopMoving();
 
-const Lada = new Car("Lada", 2005, "Black", 150, 100);
-console.log(Lada);
+const Daeweo = new Car3("Daeweo", 2005, "Black", 150, 100);
+console.log(Daeweo);
 
-Lada.stopMoving();
-Lada.accelerationOn();
-Lada.startMoving(); 
+Daeweo.stopMoving();
+Daeweo.accelerationOn();
+Daeweo.startMoving(); 
