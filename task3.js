@@ -37,7 +37,7 @@ Car3.prototype = {
   refueling: function() {
     this.fuel = 100;
   }  
-}
+};
 
 
 console.log(Car3.prototype);

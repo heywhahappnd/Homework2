@@ -37,7 +37,7 @@ const Car = {
   refueling: function() {
     this.fuel = 100;
   }
-}
+};
 
 Car.startMoving();
 Car.accelerationOn();
